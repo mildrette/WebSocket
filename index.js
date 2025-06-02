@@ -1,4 +1,4 @@
-const socket = new WebSocket("ws://echo.websocket.events");
+const socket = new WebSocket("ws://echo.websocket.events"); 
 
 socket.onpen = () => {
     console.log("Websocket is connected");
@@ -22,6 +22,7 @@ function sendMessage() {
     const ul = document.getElementById("messages");
     const li = document.createElement("li");
     li.textContent = " sent: " + message;
-    
+
     ul.appendChild(li);
 }
+
