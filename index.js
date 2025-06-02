@@ -13,7 +13,6 @@ socket.onmessage = (event) => {
 };
 
 // Send a message when button is clicked
-
 function sendMessage() {
     const input = document.getElementById("input");
     const message = input.value;
@@ -23,5 +22,6 @@ function sendMessage() {
     const ul = document.getElementById("messages");
     const li = document.createElement("li");
     li.textContent = " sent: " + message;
+    
     ul.appendChild(li);
 }
